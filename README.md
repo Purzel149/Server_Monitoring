@@ -33,7 +33,7 @@ Ein paar Einblicke von dem Discordbot erhälst du hier:
      ```bash
      python3 --version
      ```
-   - **Falls Python nicht installiert ist, installiere es mit folgendem Befehl:**
+   - Falls Python nicht installiert ist, installiere es mit folgendem Befehl:
      ```bash
      sudo apt-get install python3
      ```
