@@ -18,18 +18,57 @@ Ein paar Einblicke von dem Discordbot erhälst du hier:
 
 ![uptime](example_pics/uptime.png)
 
-Um den Bot selber nutzen zu können müssen folgende Schritte befolgt werden:
-- lade die die Discord Bot zip Datei von der [Releases-Seite](https://github.com/PaccoTheTaco/Server_Monitoring/releases) herunter
-- entpacke diese und schiebe sie auf deinen Server in einen Ordner deiner Wahl
-- stelle sicher das auf deinem Server Python installiert ist (python --version oder python3 --version) --> wenn Python nicht installiert ist, installiere python via "sudo apt-get install python3"
-- installiere die dazugehörige Bibliothek "sudo apt-get install python3-pip"
-- navigiere in das Verzeichnis und installiere über pip die benötigten Pakete "pip install -r requirements.txt"
-- in dem gleichen Verzeichnis musst du nun die Datei .env erstelllen und in dieser "DISCORD_TOKEN=" reinschreiben. Hinter dem "DISCORD_TOKEN=" fügst du den Token ein den du dir vom [Discord Developer Portal](https://discord.com/developers/applications) holen kannst
-- wieder in dem gleichen Verzeichnis führst du "python3 bot.py" und dein Bot sollte laufen 
+### Schritte zur Einrichtung des Discord Bots:
+
+1. Lade die Discord Bot ZIP-Datei von der [Releases-Seite](https://github.com/PaccoTheTaco/Server_Monitoring/releases) herunter.
+
+2. Entpacke die ZIP-Datei und verschiebe den Inhalt auf deinen Server in einen Ordner deiner Wahl.
+
+3. Stelle sicher, dass Python auf deinem Server installiert ist:
+   - Überprüfe die Python-Version:  
+     ```bash
+     python --version
+     ```
+     oder  
+     ```bash
+     python3 --version
+     ```
+   - **Falls Python nicht installiert ist, installiere es mit folgendem Befehl:**
+     ```bash
+     sudo apt-get install python3
+     ```
+
+4. Installiere die Python-Paketverwaltung pip:
+   ```bash
+   sudo apt-get install python3-pip
+   ```
+5. Navigiere in das Verzeichnis des Bots und installiere die benötigten Python-Pakete:
+   ```bash
+   pip install -r requirements.txt
+    ```
+6. Erstelle im gleichen Verzeichnis eine `.env`-Datei und füge den folgenden Inhalt hinzu:
+
+   - Öffne einen Texteditor, um die Datei zu erstellen:
+     ```bash
+     sudo nano .env
+     ```
+
+   - Füge den folgenden Inhalt in die Datei ein:
+     ```text
+     DISCORD_TOKEN=
+     ```
+   - Trage hinter `DISCORD_TOKEN=` deinen Token ein, den du dir vom [Discord Developer Portal](https://discord.com/developers/applications) geholt hast.
+
+   - Speichere die Datei und schließe den Editor (in `nano` durch Drücken von `CTRL + O`, `Enter` und dann `CTRL + X`).
+
+7. Starte den Bot im gleichen Verzeichnis mit folgendem Befehl:
+   ```bash
+   python3 bot.py
+    ```
 
 PS: vergiss nicht deinen Discordbot auf deinen Discord Server zu adden :D
 
-### Slack App setup:
+## Slack App setup:
 
 Hier sind ein paar Einblicke zu der Slack App: 
 
@@ -84,7 +123,7 @@ To be able to use the bot yourself, the following steps must be followed:
 
 PS: don't forget to add your discordbot to your discord server :D
 
-### Slack App setup:
+## Slack App setup:
 
 Here are a few insights into the Slack app: 
 
